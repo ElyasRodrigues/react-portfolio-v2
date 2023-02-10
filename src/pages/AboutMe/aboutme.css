@@ -1,0 +1,92 @@
+.aboutme{
+  display: flex;
+  gap: 20px;
+  max-width: 1024px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.aboutme .info-content,
+.aboutme .text-content{
+  background-color: rgba(0, 0, 0, 0.844);
+  border: 3px solid rgba(255, 0, 0, 0.616);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.aboutme .info-content img{
+  width: 270px;
+  border-radius: 14%;
+
+}
+
+.aboutme .info-content p{
+  text-align: center;
+  font-size: 25px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+.aboutme .info-content .social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.aboutme .info-content .social-icons a svg{
+  transition: 0.4s;  
+}
+
+.aboutme .info-content .social-icons a svg:hover{
+  fill: red;
+  transform: scale(1.2);
+}
+
+.aboutme .text-content{
+  font-family: "Open Sans";
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.aboutme .text-content p{ 
+  margin-bottom: 20px;
+}
+.aboutme .text-content .btn{
+  width: 154px;
+  margin-bottom: 8px;
+}
+
+
+
+
+@media (max-width: 810px){
+  .aboutme{
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutme :last-child{ 
+    margin-bottom: 20px;
+  }
+  .aboutme .info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    border: 0;
+  }
+  .aboutme .info-content img{
+    max-width: 270px;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .aboutme .text-content {
+    border: 0;
+  }
+
+  .aboutme .text-content .btn{
+    margin-top: 30px;
+  }
+}

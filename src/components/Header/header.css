@@ -1,0 +1,109 @@
+.header-container{
+  background-color: #000000bf;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  user-select: none;
+}
+
+.header-container .logo{
+  width: 200px;
+}
+
+.header-container .links{
+  display: flex;
+  gap: 20px;
+}
+.header-container .links a{
+  transition: all .4s;
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.header-container .links a:hover{
+  color: rgba(199, 0, 0, 0.819);
+}
+
+.header-container .open-menu{
+  display: none;
+  padding: 10px;
+  background: transparent;
+  border: 0;
+
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 28px;
+  
+  cursor: pointer;
+}
+
+.header-container .menu-container{
+  width: 0;
+  height: 100%;
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.918);
+  transition: all .5s;
+  display: none;
+
+}
+
+.header-container .menu-container .menu{
+  gap: 60px;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .menu-container button{
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  padding: 10px;
+  background: transparent;
+  border: 0;
+
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 28px;
+  
+  cursor: pointer;
+}
+
+.header-container .menu-container .menu a{
+  transition: all .4s;
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 26px;
+  width: 100%;
+  text-align: center;
+}
+
+
+@media(max-width: 720px){
+  .header-container .links{
+    display: none;
+  }
+  .header-container .open-menu{
+    display: block;
+  }
+  .header-container .menu-container {
+    display: block;
+  }
+
+}
+
+@media (max-width: 390px){
+  .header-container{
+    padding: 20px 16px;
+    gap: 20px;
+  }
+}
