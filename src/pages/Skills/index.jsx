@@ -70,7 +70,7 @@ export default function Skills() {
       </div>
       <div className="go-projects">
         <span className="btn">
-          <Link to={"/projects"}>Ver projetos</Link>
+          <Link to={"/projetos"}>Ver projetos</Link>
         </span>
       </div>
     </div>

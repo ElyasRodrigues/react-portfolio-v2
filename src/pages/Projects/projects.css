@@ -1,0 +1,38 @@
+.projects-container{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(0, 0, 0, 0.844);
+  justify-items: center;
+  border-radius: 16px;
+
+}
+.projects-container .card{
+  transition: all .4s;
+
+}
+
+.projects-container .card:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.projects-container:hover > :not(:hover){
+  opacity: .8;
+}
+
+@media (max-width: 950px){
+  .projects-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 610px){
+  .projects-container{
+    grid-template-columns: 1fr;
+  }
+}

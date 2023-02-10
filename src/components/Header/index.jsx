@@ -32,8 +32,8 @@ export default function Header() {
       <nav className="links hide">
         <Link to={"/aboutme"}>Sobre</Link>
         <Link to={"/skills"}>Skills</Link>
-        <Link to={"/projects"}>Projetos</Link>
-        <Link to={"/contact"}>Contato</Link>
+        <Link to={"/projetos"}>Projetos</Link>
+        <Link to={"/contato"}>Contato</Link>
       </nav>
      
 
@@ -42,8 +42,8 @@ export default function Header() {
         <nav className="menu" onClick={handleMenu}>
           <Link to={"/aboutme"}>Sobre</Link>
           <Link to={"/skills"}>Skills</Link>
-          <Link to={"/projects"}>Projetos</Link>
-          <Link to={"/contact"}>Contato</Link>
+          <Link to={"/projetos"}>Projetos</Link>
+          <Link to={"/contato"}>Contato</Link>
         </nav>
       </div>
 
