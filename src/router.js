@@ -5,6 +5,7 @@ import AboutMe from "./pages/AboutMe"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Skills from "./pages/Skills"
+import Error from "./pages/Error"
 
 export default function Router() {
   return(
@@ -14,6 +15,7 @@ export default function Router() {
       <Route path="/skills" element={ <Skills/> }/>
       <Route path="/projetos" element={ <Projects/> }/>
       <Route path="/contato" element={ <Contact/> }/>
+      <Route path="*" element={ <Error/> }/>
     </Routes>
   )
 }
