@@ -1,5 +1,6 @@
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
+import { toast } from "react-toastify"
 
 import "./contact.css"
 
@@ -27,15 +28,15 @@ export default function Contact() {
     ev.preventDefault()
     
     if(formData.name === ""){
-      console.log("nome vazio");
+      toast.error("Informe seu nome!");
       return
     }
     if(formData.email === ""){
-      console.log("email vazio");
+      toast.error("Informe seu email!");
       return
     }
     if(formData.message === ""){
-      console.log("message vazio");
+      toast.error("Digite a mensagem!");
       return
     }
 
@@ -50,8 +51,9 @@ export default function Contact() {
     }
 
     emailjs.send(emailTemplate, templateId, templateParams, publicKey)
-    .then((res) => {
-      console.log("Email enviado", res);
+    .then(() => {
+      toast.success("Email enviado");
+      toast.warning(`Logo, logo, entrarei em contato com você, ${formData.name} :)`);
       setFormData({
         name: "",
         email: "",
