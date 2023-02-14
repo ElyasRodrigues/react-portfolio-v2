@@ -1,4 +1,5 @@
 import { useState } from "react"
+import emailjs from "@emailjs/browser"
 
 import "./contact.css"
 
@@ -21,9 +22,44 @@ export default function Contact() {
 
   }
 
+  
   function  handleSubmit(ev) {
     ev.preventDefault()
-    console.log(formData);
+    
+    if(formData.name === ""){
+      console.log("nome vazio");
+      return
+    }
+    if(formData.email === ""){
+      console.log("email vazio");
+      return
+    }
+    if(formData.message === ""){
+      console.log("message vazio");
+      return
+    }
+
+    const emailTemplate = "service_3oue9nk"
+    const templateId = "template_8ivprki"
+    const publicKey = "kN3xYmPuWvs61QbsK"
+
+    const templateParams = {
+      from_name: formData.name,
+      message: formData.message,
+      email: formData.email
+    }
+
+    emailjs.send(emailTemplate, templateId, templateParams, publicKey)
+    .then((res) => {
+      console.log("Email enviado", res);
+      setFormData({
+        name: "",
+        email: "",
+        message: "" 
+      })
+    })
+    .catch((err) => console.log(err))
+
   }
 
   return (
