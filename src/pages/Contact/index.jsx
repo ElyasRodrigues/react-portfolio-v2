@@ -1,6 +1,7 @@
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import { toast } from "react-toastify"
+import { FaWhatsapp, FaAngleDoubleRight, FaAngleDoubleDown } from "react-icons/fa"
 
 import "./contact.css"
 
@@ -11,6 +12,7 @@ export default function Contact() {
     email: "",
     message: "" 
   })
+  const [messageWpp, setMessageWpp] = useState("")
 
   function handleChange (ev) {
 
@@ -64,6 +66,7 @@ export default function Contact() {
 
   }
 
+
   return (
     <div className="container">
       <h1>Contato</h1>
@@ -103,6 +106,27 @@ export default function Contact() {
 
           <button type="submit">Enviar</button>
         </form>
+        <div className="icon">
+          <span className="rigth"><FaAngleDoubleRight size={40}/></span>
+          <span className="down"><FaAngleDoubleDown size={40}/></span>
+        </div>
+        <div className="whatsapp">
+          <p>Ou se preferir, me chama no <FaWhatsapp title="Whatsapp"/></p>
+          <textarea 
+            name="wpp" 
+            id="wpp" 
+            value={messageWpp}
+            onChange={(e) => setMessageWpp(e.target.value)}
+            placeholder="Digite sua mensagem.."
+            >  
+          </textarea>
+
+          <a 
+            href={`https://wa.me/98988149744?text=${messageWpp}`}
+            target="_blank"
+            rel="noreferrer" 
+          >Mandar mensagem <FaWhatsapp size={20}/></a>
+        </div>
       </div>
     </div>
   )
