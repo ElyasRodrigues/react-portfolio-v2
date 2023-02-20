@@ -54,7 +54,8 @@
   margin-bottom: 20px;
 }
 .aboutme .text-content .btn{
-  width: 154px;
+  text-align: center;
+  max-width: 238px;
   margin-bottom: 8px;
 }
 

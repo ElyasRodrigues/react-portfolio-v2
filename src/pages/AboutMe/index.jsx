@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
 
 import "./aboutme.css"
@@ -8,9 +9,12 @@ import meImg from "../../assets/me.jpg"
 
 
 export default function AboutMe() {
+
+  const { t } = useTranslation()
+
   return (
     <div className="container">
-      <h1>Sobre mim</h1>
+      <h1>{t("titles.0")}</h1>
       <div className="aboutme">
         <div className="info-content">
           <img src={meImg} alt="perfil.jgeg" />
@@ -39,14 +43,10 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="text-content">
-          <p>
-             Sei que é bem clichê, mas desde muito novo, sempre fui fascinado pela tecnologia, passava horas na frente de uma tela. Sempre quando eu usava algo relacionado a tecnologia, desde uma simples calculadora a um 'moderno' computador, eu sempre me perguntava: "como isso funciona?". Até que eu conheci a programação, e a partir daquele momento não demorou muito para descobrir que era isso que eu queria para minha vida. Atualmente estou aprimorando minhas habilidades e conhecimentos nas tecnologias mais requisitadas no front-end.
-          </p>
-          <p>
-            Enfim, espero que possamos trabalhar juntos algum dia. 🤝
-          </p>
+          <p>{t("aboutMeTxt.0")}</p>
+          <p>{t("aboutMeTxt.1")} 🤝</p>
           <div  className="btn">
-            <Link to={"/skills"}>Ver skills</Link>
+            <Link to={"/skills"}>{t("aboutMeTxt.2")}</Link>
           </div>
         </div>
       </div>

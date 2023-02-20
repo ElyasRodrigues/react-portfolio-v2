@@ -22,7 +22,11 @@
 }
 
 .home .text-content div .name{
-  color: #e42020;
+  background: linear-gradient(#e42020, rgb(157, 4, 4));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  object-fit: cover;
   font-size: 58px;
 }
 

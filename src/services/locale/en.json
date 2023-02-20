@@ -1,0 +1,23 @@
+{
+  "translation": {
+    "header": ["About", "Skills", "Projects", "Contact"],
+
+    "titles": ["About me", "Skills", "Projects", "Contact"],
+
+    "homeTxt": ["Hello, my name is", "and i can be yours", "new developer.", "know more"],
+
+    "aboutMeTxt": [
+      "I know it's pretty cliché, but since I was very young, I've always been fascinated by technology, spending hours in front of a screen. Whenever I used something technology related, from a simple calculator to a 'modern' computer, I always asked myself: 'how does this work?'. Until I got to know programming, and from that moment on it didn't take long to discover that this was what I wanted for my life. I am currently improving my skills and knowledge in the most requested front-end technologies.",
+      "Anyway, I hope we can work together someday.",
+      "See skills"
+    ],
+
+    "skillsBtn": "See projects",
+
+    "projects": ["More details"],
+
+    "contact": ["Name", "Type your name", "Type your email", "Message", "Type your message...", "Send", "Or if you prefer, call me at", "Send a message"]
+
+  }
+}
+

@@ -8,12 +8,29 @@
   user-select: none;
 }
 
+.change-translate-btn{
+  background-color: transparent;
+  border: none;
+  fill: aqua;
+
+  font-size: 17px;
+  font-family: "Work Sans";
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+
 .header-container .logo{
   width: 200px;
 }
 
 .header-container .links{
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .header-container .links a{
@@ -63,7 +80,7 @@
   align-items: center;
 }
 
-.header-container .menu-container button{
+.header-container .menu-container .handle-menu{
   position: absolute;
   right: 25px;
   top: 10px;

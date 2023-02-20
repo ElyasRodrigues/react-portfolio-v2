@@ -1,14 +1,29 @@
-import "./modal.css"
+import { useTranslation } from "react-i18next"
 import { BsGlobe, BsGithub, BsX} from "react-icons/bs"
 
+
+import "./modal.css"
+
 export default function Modal({content, close}) {
+  const { i18n: {language} } = useTranslation()
 
   return(
     <div className="modal-container">
       <div className="modal">
         <img src={content.img} alt="img do projeto" />
-        <h2>{content.name}</h2>
-        <p>{content.description}</p>
+        <h2>
+          {language === "en" && content.nameEn ? (
+            content.nameEn
+          ):(
+            content.name
+          )}
+        </h2>
+
+        <p>{language === "pt" ? (
+          content.descriptionPt
+        ):(
+          content.descriptionEn
+        )}</p>
 
         <div className="links">
           <a 
@@ -16,7 +31,11 @@ export default function Modal({content, close}) {
             target="_blank"
             rel="noreferrer">
             <BsGlobe size={30}/>
-            ver na web
+              {language === "pt" ? (
+                "Ver na Web"
+              ):(
+                "see on the web"
+              )}
           </a>
 
           <a 
@@ -24,7 +43,12 @@ export default function Modal({content, close}) {
             target="_blank"
             rel="noreferrer">
             <BsGithub size={30}/>
-            Ver repositorio
+              {language === "pt" ? (
+                "Ver repositório"
+              ):(
+                "see repository"
+              )}
+            
           </a>
         </div>
 

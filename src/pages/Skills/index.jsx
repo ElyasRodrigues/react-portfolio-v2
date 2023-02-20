@@ -4,14 +4,16 @@ import javascript from "../../assets/skills-icons/javascript.svg"
 import sass from "../../assets/skills-icons/sass.svg"
 import react from "../../assets/skills-icons/react.svg"
 import firebase from "../../assets/skills-icons/firebase.svg"
+import { useTranslation } from "react-i18next"
 
 import "./skills.css"
 import { Link } from "react-router-dom"
 
 export default function Skills() {
+  const { t } = useTranslation()
   return (
     <div className="container">
-      <h1>Skills</h1>
+      <h1>{t("titles.1")}</h1>
       <div className="skills-container">
 
         <div className="skill-icon">
@@ -70,7 +72,7 @@ export default function Skills() {
       </div>
       <div className="go-projects">
         <span className="btn">
-          <Link to={"/projetos"}>Ver projetos</Link>
+          <Link to={"/projetos"}>{t("skillsBtn")}</Link>
         </span>
       </div>
     </div>

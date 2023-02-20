@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import emailjs from "@emailjs/browser"
 import { toast } from "react-toastify"
 import { FaWhatsapp, FaAngleDoubleRight, FaAngleDoubleDown } from "react-icons/fa"
@@ -7,6 +8,8 @@ import "./contact.css"
 
 
 export default function Contact() {
+  const { t } = useTranslation()
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -69,15 +72,15 @@ export default function Contact() {
 
   return (
     <div className="container">
-      <h1>Contato</h1>
+      <h1>{t("titles.3")}</h1>
       <div className="form-contact">
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Nome:</label>
+          <label htmlFor="name">{t("contact.0")}:</label>
           <input 
             type="text" 
             name="name" 
             id="name" 
-            placeholder="Digite seu nome.."
+            placeholder={t("contact.1")}
             value={formData.name}
             onChange={handleChange}
 
@@ -88,36 +91,36 @@ export default function Contact() {
             type="email" 
             name="email" 
             id="email" 
-            placeholder="informe seu email"
+            placeholder={t("contact.2")}
             value={formData.email}
             onChange={handleChange}
           />
 
-          <label htmlFor="message">Mensagem:</label>
+          <label htmlFor="message">{t("contact.3")}:</label>
           <textarea 
             name="message" 
             id="message" 
             cols="30" 
             rows="10" 
-            placeholder="Digite sua mensagem.."
+            placeholder={t("contact.4")}
             value={formData.message}
             onChange={handleChange}
           ></textarea>
 
-          <button type="submit">Enviar</button>
+          <button type="submit">{t("contact.5")}</button>
         </form>
         <div className="icon">
           <span className="rigth"><FaAngleDoubleRight size={40}/></span>
           <span className="down"><FaAngleDoubleDown size={40}/></span>
         </div>
         <div className="whatsapp">
-          <p>Ou se preferir, me chama no <FaWhatsapp title="Whatsapp"/></p>
+          <p>{t("contact.6")} <FaWhatsapp title="Whatsapp"/></p>
           <textarea 
             name="wpp" 
             id="wpp" 
             value={messageWpp}
             onChange={(e) => setMessageWpp(e.target.value)}
-            placeholder="Digite sua mensagem.."
+            placeholder={t("contact.4")}
             >  
           </textarea>
 
@@ -125,7 +128,7 @@ export default function Contact() {
             href={`https://wa.me/98988149744?text=${messageWpp}`}
             target="_blank"
             rel="noreferrer" 
-          >Mandar mensagem <FaWhatsapp size={20}/></a>
+          >{t("contact.7")} <FaWhatsapp size={20}/></a>
         </div>
       </div>
     </div>
