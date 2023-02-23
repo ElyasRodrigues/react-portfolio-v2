@@ -6,7 +6,7 @@
 }
 .home .text-content{
   width: 522px;
-  background-color: rgba(0, 0, 0, 0.844);
+  background-color: var(--bg-color);
   padding: 18px;
   border-radius: 14px;
 }

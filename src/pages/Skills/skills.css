@@ -7,7 +7,7 @@
   justify-items: center;
   gap: 18px;
 
-  background-color: rgba(0, 0, 0, 0.844);
+  background-color: var(--bg-color);
   padding: 20px;
   border-radius: 16px;
 }

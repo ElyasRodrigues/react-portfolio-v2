@@ -9,8 +9,8 @@
 
 .aboutme .info-content,
 .aboutme .text-content{
-  background-color: rgba(0, 0, 0, 0.844);
-  border: 3px solid rgba(255, 0, 0, 0.616);
+  background-color: var(--bg-color);
+  border: 3px solid var(--border-color);
   border-radius: 12px;
   padding: 14px;
 }
@@ -40,7 +40,7 @@
 }
 
 .aboutme .info-content .social-icons a svg:hover{
-  fill: red;
+  fill: var(--btn-color);
   transform: scale(1.2);
 }
 

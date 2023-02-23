@@ -13,7 +13,7 @@
   align-items: center;
   border-radius: 8px;
   padding: 18px;
-  background-color: rgba(0, 0, 0, 0.844);
+  background-color: var(--bg-color);
 
 }
 .error-container .error h1{
@@ -27,7 +27,7 @@
 }
 
 .error-container h1 .four{
-  color: rgba(255, 0, 0, 0.616);
+  color: var(--border-color);
 }
 
 .error-container p{
@@ -37,7 +37,7 @@
 }
 
 .error-container a{
-  background-color: rgba(255, 0, 0, 0.616);
+  background-color: var(--btn-color);
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 1.4rem;
@@ -45,8 +45,8 @@
   transition: all .4s;
 }
 .error-container a:hover{
-  background-color: #fff;
-  color: rgba(255, 0, 0, 0.616);
+  background-color: var(--text-color);
+  color: var(--btn-color);
 }
 
 @media (max-width: 580px){

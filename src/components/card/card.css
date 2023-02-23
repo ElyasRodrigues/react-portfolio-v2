@@ -23,9 +23,9 @@
 
   padding: 7px 14px;
   border-radius: 8px;
-  background-color: #e42020;
+  background-color: var(--btn-color);
   border: 0;
-  color: #fff;
+  color: var(--text-color);
   font-size: 14px;
   font-family: "Work Sans";
   font-weight: normal;
@@ -35,8 +35,8 @@
 }
 
 .card .card-button:hover{
-  color: #e42020;
-  background-color: #fff;
+  color: var(--btn-color);
+  background-color: var(--text-color);
 }
 
 
