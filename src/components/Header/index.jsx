@@ -46,8 +46,8 @@ export default function Header() {
       <nav className="links hide">
         <Link to={"/aboutme"}>{t("header.0")}</Link>
         <Link to={"/skills"}>{t("header.1")}</Link>
-        <Link to={"/projetos"}>{t("header.2")}</Link>
-        <Link to={"/contato"}>{t("header.3")}</Link>
+        <Link to={"/projects"}>{t("header.2")}</Link>
+        <Link to={"/contact"}>{t("header.3")}</Link>
         <button 
           type="button" 
           className="change-translate-btn" 
@@ -63,8 +63,8 @@ export default function Header() {
         <nav className="menu" onClick={handleMenu}>
           <Link to={"/aboutme"}>{t("header.0")}</Link>
           <Link to={"/skills"}>{t("header.1")}</Link>
-          <Link to={"/projetos"}>{t("header.2")}</Link>
-          <Link to={"/contato"}>{t("header.3")}</Link>
+          <Link to={"/projects"}>{t("header.2")}</Link>
+          <Link to={"/contact"}>{t("header.3")}</Link>
           <button 
             type="button" 
             className="change-translate-btn" 

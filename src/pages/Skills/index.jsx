@@ -72,7 +72,7 @@ export default function Skills() {
       </div>
       <div className="go-projects">
         <span className="btn">
-          <Link to={"/projetos"}>{t("skillsBtn")}</Link>
+          <Link to={"/projects"}>{t("skillsBtn")}</Link>
         </span>
       </div>
     </div>
