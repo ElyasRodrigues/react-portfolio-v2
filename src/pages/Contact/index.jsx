@@ -37,7 +37,7 @@ export default function Contact() {
       return
     }
     if(formData.email === ""){
-      toast.error("Informe seu email!");
+      toast.error("Digite seu email!");
       return
     }
     if(formData.message === ""){
