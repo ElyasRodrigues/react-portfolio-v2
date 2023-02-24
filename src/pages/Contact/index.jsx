@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { useTranslation } from "react-i18next"
 import emailjs from "@emailjs/browser"
 import { toast } from "react-toastify"
@@ -15,6 +15,11 @@ export default function Contact() {
     email: "",
     message: "" 
   })
+  const inputsRef = {
+    inputN: useRef(null),
+    inputE: useRef(null),
+    inputM: useRef(null),
+  }
   const [messageWpp, setMessageWpp] = useState("")
 
   function handleChange (ev) {
@@ -36,15 +41,19 @@ export default function Contact() {
     ev.preventDefault()
     
     if(formData.name === ""){
+      
       toast.error("Informe seu nome!");
+      inputsRef.inputN.current.focus()
       return
     }
     if(formData.email === ""){
       toast.error("Informe seu email!");
+      inputsRef.inputE.current.focus()
       return
     }
     if(formData.message === ""){
       toast.error("Digite a mensagem!");
+      inputsRef.inputM.current.focus() 
       return
     }
 
@@ -86,6 +95,7 @@ export default function Contact() {
             placeholder={t("contact.1")}
             value={formData.name}
             onChange={handleChange}
+            ref={inputsRef.inputN}
 
           />
 
@@ -97,6 +107,8 @@ export default function Contact() {
             placeholder={t("contact.2")}
             value={formData.email}
             onChange={handleChange}
+            ref={inputsRef.inputE}
+
           />
 
           <label htmlFor="message">{t("contact.3")}:</label>
@@ -108,6 +120,7 @@ export default function Contact() {
             placeholder={t("contact.4")}
             value={formData.message}
             onChange={handleChange}
+            ref={inputsRef.inputM}
           ></textarea>
 
           <button type="submit">{t("contact.5")}</button>

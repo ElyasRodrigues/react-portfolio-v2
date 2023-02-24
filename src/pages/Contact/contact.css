@@ -178,17 +178,21 @@
     display: block;
     animation: spinner ease infinite 8s;
   }
-
-}
-
-@media (max-width: 415px){
   .form-contact .whatsapp p{
     flex-direction: column;
-    font-size: 20px;
     gap: 4px;
     text-align: center;
     margin-bottom: 0;
   }
+  .form-contact .whatsapp p svg{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 415px){
   .form-contact .whatsapp a{
     font-size: 16px;
   }
@@ -196,11 +200,15 @@
 
 @media (max-width: 372px){
   .form-contact .whatsapp p{
-    font-size: 18px;
+    font-size: 20px;
+  }
+  .form-contact .whatsapp p svg{
+    width: 35px;
+    height: 35px;
   }
 }
-@media (max-width: 305px){
+@media (max-width: 323px){
   .form-contact .whatsapp p{
-    font-size: 17px;
+    font-size: 18px;
   }
 }
