@@ -10,7 +10,10 @@ import "./skills.css"
 import { Link } from "react-router-dom"
 
 export default function Skills() {
-  const { t } = useTranslation()
+  const { t, i18n: {language} } = useTranslation()
+
+  document.title = `Elyas Rodrigues | ${language === "pt" ? 'Habilidades' : 'Skills'}`
+
   return (
     <div className="container">
       <h1>{t("titles.1")}</h1>

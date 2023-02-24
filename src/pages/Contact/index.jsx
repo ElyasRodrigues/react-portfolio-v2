@@ -8,7 +8,7 @@ import "./contact.css"
 
 
 export default function Contact() {
-  const { t } = useTranslation()
+  const { t, i18n: {language} } = useTranslation()
 
   const [formData, setFormData] = useState({
     name: "",
@@ -28,8 +28,11 @@ export default function Contact() {
 
   }
 
+  document.title = `Elyas Rodrigues | ${language === "pt" ? 'Contato' : 'Contact'}`
+
+
   
-  function  handleSubmit(ev) {
+  function handleSubmit(ev) {
     ev.preventDefault()
     
     if(formData.name === ""){
@@ -37,7 +40,7 @@ export default function Contact() {
       return
     }
     if(formData.email === ""){
-      toast.error("Digite seu email!");
+      toast.error("Informe seu email!");
       return
     }
     if(formData.message === ""){

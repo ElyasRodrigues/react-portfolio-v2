@@ -10,7 +10,9 @@ import meImg from "../../assets/me.jpg"
 
 export default function AboutMe() {
 
-  const { t } = useTranslation()
+  const { t, i18n: {language} } = useTranslation()
+
+  document.title = `Elyas Rodrigues | ${language === "pt" ? 'Sobre mim' : 'About me'}`
 
   return (
     <div className="container">

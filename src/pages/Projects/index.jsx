@@ -9,17 +9,20 @@ import projects from "./projects"
 import "./projects.css"
 
 export default function Projects() {
-  const { t, i18n: {language}} = useTranslation()
+  const { t, i18n: {language} } = useTranslation()
 
+  
   const [showModal, setShowModal] = useState(false)
   const [detail, setDetail] = useState({})
-
-
+  
+  
   function toogleModal(project) {
     setShowModal(!showModal)
     setDetail(project);
   }
 
+  document.title = `Elyas Rodrigues | ${language === "pt" ? 'Projetos' : 'Projects'}`
+  
   return (
     <div className="container">
       <h1>{t("titles.2")}</h1>

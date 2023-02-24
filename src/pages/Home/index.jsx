@@ -7,6 +7,8 @@ import "./home.css"
 export default function Home() {
   const { t } = useTranslation()
 
+  document.title = `Elyas Rodrigues | Portfólio`
+
   return (
     <div className="home container">
       <div className="text-content">
