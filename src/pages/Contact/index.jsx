@@ -42,17 +42,17 @@ export default function Contact() {
     
     if(formData.name === ""){
       
-      toast.error("Informe seu nome!");
+      toast.error(t("contact.1"));
       inputsRef.inputN.current.focus()
       return
     }
     if(formData.email === ""){
-      toast.error("Informe seu email!");
+      toast.error(t("contact.2"));
       inputsRef.inputE.current.focus()
       return
     }
     if(formData.message === ""){
-      toast.error("Digite a mensagem!");
+      toast.error(t("contact.4"));
       inputsRef.inputM.current.focus() 
       return
     }

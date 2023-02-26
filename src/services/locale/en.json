@@ -16,7 +16,9 @@
 
     "projects": ["More details"],
 
-    "contact": ["Name", "Type your name", "Type your email", "Message", "Type your message...", "Send", "Or if you prefer, call me at", "Send a message"]
+    "contact": ["Name", "Type your name...", "Type your email...", "Message", "Type your message...", "Send", "Or if you prefer, call me at", "Send a message"],
+
+    "error": "Oops, page not found"
 
   }
 }
