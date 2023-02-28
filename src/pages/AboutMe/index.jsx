@@ -23,13 +23,13 @@ export default function AboutMe() {
           <p>Elyas Rodrigues</p>
           <div className="social-icons">
             <a 
-              href="https://github.com/ElyasRodrigues/" 
+              href="https://github.com/oelyasrodrigues/" 
               target={"_blank"}
               rel={"noreferrer"}>
               <FaGithub size={30}/>
             </a>
             <a 
-              href="https://www.linkedin.com/in/elyasrodrigues/"
+              href="https://www.linkedin.com/in/oelyasrodrigues/"
               target={"_blank"}
               rel={"noreferrer"}
               >
