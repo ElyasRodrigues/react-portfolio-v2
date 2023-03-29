@@ -43,6 +43,7 @@ const projects = [
   },{
     id: 6,
     name: "Gamer de sucesso",
+    nameEn: "Successful gamer",
     img: "https://imgbox.io/ib/C3RCUDpfW2.jpg",
     descriptionPt: "Projeto de codificação de uma página de captura do figma utilizando HTML, CSS e Javascript para animação.",
     descriptionEn: "Coding project for a figma capture page using HTML, CSS and Javascript for animation.",
