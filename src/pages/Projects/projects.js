@@ -42,6 +42,14 @@ const projects = [
     inWeb: "https://oelyasrodrigues.github.io/calcJs"
   },{
     id: 6,
+    name: "Gamer de sucesso",
+    img: "https://imgbox.io/ib/C3RCUDpfW2.jpg",
+    descriptionPt: "Projeto de codificação de uma página de captura do figma utilizando HTML, CSS e Javascript para animação.",
+    descriptionEn: "Coding project for a figma capture page using HTML, CSS and Javascript for animation.",
+    github: "https://github.com/oelyasrodrigues/jornada-gamer-de-sucesso",
+    inWeb: "https://oelyasrodrigues.github.io/jornada-gamer-de-sucesso"
+  },{
+    id: 7,
     name: "Tic Tac Toe",
     img: "https://imgbox.io/ib/ft8EDmNbcv.PNG",
     descriptionPt: "Esse projeto foi um exercício proposto em um módulo de Javascript do curso One Bit Code, com o intuito de fixar/aprimorar o contéudo aprendido durante o módulo, como por exemplo: Arrays, manipulação de DOM e boas práticas no JS.",
@@ -49,15 +57,15 @@ const projects = [
     github: "https://github.com/oelyasrodrigues/calcJs",
     inWeb: "https://oelyasrodrigues.github.io/calcJs"
   },{
-    id: 7,
+    id: 8,
     name: "LP - God of War",
-    img: "https://imgbox.io/ib/phHiPlWfXs.png",
+    img: "https://images2.imgbox.com/0d/ef/OxJlr9UQ_o.png",
     descriptionPt: "Página estática com o tema do jogo God of War Ragnarök, ela foi desenvolvida em HTML5, SASS e um pouco de JS (para manipular os slides no final da página) ",
     descriptionEn: "Static page with the theme of the game God of War Ragnarök, it was developed in HTML5, SASS and a little JS (to manipulate the slides at the bottom of the page)",
     github: "https://github.com/oelyasrodrigues/god-of-war",
     inWeb: "https://oelyasrodrigues.github.io/god-of-war/"
   },{
-    id: 8,
+    id: 9,
     name: "OneBitX",
     img: "https://imgbox.io/ib/L4g3Ig9Y9x.PNG",
     descriptionPt: "Página estática proposta como um exercício no módulo de Bootstrap do curso One Bit Code, com o intuito de fixar o conhecimento adquirido durante todo o módulo.",
@@ -65,7 +73,7 @@ const projects = [
     github: "https://github.com/oelyasrodrigues/oneBitX",
     inWeb: "https://oelyasrodrigues.github.io/oneBitX"
   },{
-    id: 9,
+    id: 10,
     name: "Avengers Memory Game",
     img: "https://imgbox.io/ib/fxYVPVd5Rw.PNG",
     descriptionPt: "Jogo da memória com o Tema dos Vingadores, projeto desenvolvido em Javascript puro, nele foi abordado vários conceitos do JS, incluindo o DOM.",
@@ -73,7 +81,7 @@ const projects = [
     github: "https://github.com/oelyasrodrigues/AvengersMemoryGame",
     inWeb: "https://oelyasrodrigues.github.io/AvengersMemoryGame"
   },{
-    id: 10,
+    id: 11,
     name: "QrCode Generate",
     img: "https://images2.imgbox.com/6c/cc/tvgCSuOr_o.png",
     descriptionPt: "Projeto desenvolvido no intuito de aprimorar o conhecimento em uso de bibliotecas. Nesse foi usado o React Qr Code e Qr Code.",
@@ -82,7 +90,7 @@ const projects = [
     inWeb: "https://qrgenerate.vercel.app/"
   },
   {
-    id: 11,
+    id: 12,
     name: "Em breve...",
     nameEn: "shortly...",
     descriptionPt: "Estou desenvolvendo, pegue um cafézinho e aguarde :D",
